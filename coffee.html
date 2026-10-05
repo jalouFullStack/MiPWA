@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Información del café</title>
+
+    <link rel="stylesheet" href="css/coffee.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo"> Coffee House </a>
+
+      <a href="index.html" class="back-link"> ← Volver al menú </a>
+    </header>
+
+    <main class="coffee-container">
+      <section class="coffee-image">
+        <img id="coffee-image" src="" alt="" />
+      </section>
+
+      <section class="coffee-content">
+        <span id="coffee-type" class="coffee-type"></span>
+
+        <h1 id="coffee-name"></h1>
+
+        <p id="coffee-description" class="description"></p>
+
+        <div class="coffee-data">
+          <div class="data-item">
+            <span>🌎</span>
+
+            <div>
+              <small>Origen</small>
+              <p id="coffee-origin"></p>
+            </div>
+          </div>
+
+          <div class="data-item">
+            <span>☕</span>
+
+            <div>
+              <small>Sabor</small>
+              <p id="coffee-flavor"></p>
+            </div>
+          </div>
+
+          <div class="data-item">
+            <span>🥛</span>
+
+            <div>
+              <small>Ingredientes</small>
+              <p id="coffee-ingredients"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="information">
+          <h2>Preparación</h2>
+
+          <p id="coffee-preparation"></p>
+
+          <h2>Historia del café</h2>
+
+          <p id="coffee-history"></p>
+        </div>
+
+        <button class="back-button" onclick="history.back()">← Regresar</button>
+      </section>
+    </main>
+
+    <script src="js/coffees.js"></script>
+    <script src="js/coffee.js"></script>
+  </body>
+</html>
