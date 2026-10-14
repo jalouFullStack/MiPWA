@@ -160,3 +160,61 @@ nav li {
 .card button:hover {
   background-color: #b83225;
 }
+
+/* Modal cuando no hay Internet */
+.modal-offline {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.modal-offline[hidden] {
+  display: none;
+}
+
+.contenido-offline {
+  width: 100%;
+  max-width: 360px;
+  padding: 30px 24px;
+  text-align: center;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+  font-family: Arial, sans-serif;
+}
+
+.icono-offline {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.contenido-offline h2 {
+  margin: 0 0 12px;
+  color: #d62828;
+}
+
+.contenido-offline p {
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 22px;
+}
+
+.contenido-offline button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #d62828;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contenido-offline button:hover {
+  background: #a91f1f;
+}

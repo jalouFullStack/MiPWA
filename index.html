@@ -36,6 +36,26 @@
       </nav>
 
       <div class="container"></div>
+      <div
+        id="modalOffline"
+        class="modal-offline"
+        role="alertdialog"
+        aria-modal="true"
+        aria-labelledby="tituloOffline"
+        hidden
+      >
+        <div class="contenido-offline">
+          <div class="icono-offline">📡</div>
+
+          <h2 id="tituloOffline">¡Sin conexión!</h2>
+
+          <p>
+            No hay conexión a Internet. Comprueba tu red e inténtalo de nuevo.
+          </p>
+
+          <button id="btnReintentar" type="button">Reintentar conexión</button>
+        </div>
+      </div>
     </main>
 
     <script src="js/coffees.js"></script>

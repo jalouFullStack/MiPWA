@@ -11,3 +11,43 @@ if ("serviceWorker" in navigator) {
       });
   });
 }
+
+const modalOffline = document.getElementById("modalOffline");
+const btnReintentar = document.getElementById("btnReintentar");
+
+// Mostrar modal
+function mostrarModalOffline() {
+  modalOffline.hidden = false;
+}
+
+// Ocultar modal
+function ocultarModalOffline() {
+  modalOffline.hidden = true;
+}
+
+// Comprobar el estado de la conexión
+function comprobarConexion() {
+  if (navigator.onLine) {
+    ocultarModalOffline();
+  } else {
+    mostrarModalOffline();
+  }
+}
+
+// Detectar cuando se pierde Internet
+window.addEventListener("offline", () => {
+  mostrarModalOffline();
+});
+
+// Detectar cuando regresa Internet
+window.addEventListener("online", () => {
+  ocultarModalOffline();
+});
+
+// Botón para volver a comprobar
+btnReintentar.addEventListener("click", () => {
+  comprobarConexion();
+});
+
+// Comprobar al abrir la aplicación
+comprobarConexion();
